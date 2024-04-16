@@ -1,4 +1,4 @@
-use std::fmt::{Display, Formatter, Result as FmtResult};
+use std::fmt::{Display, Formatter, Result};
 
 use rocket::serde::{Deserialize, Serialize};
 
@@ -25,7 +25,7 @@ impl Display for Notification {
         } else {
             return write!(f,
                 "Hello {}, let's try our {} product: {}, grab it out before the stock runs out! Check it out: {}",
-                self.subscriber_name, self.product_type.to_lowercase(), self.product_title)
+                self.subscriber_name, self.product_type.to_lowercase(), self.product_title, self.product_url)
         }
     }
 }
