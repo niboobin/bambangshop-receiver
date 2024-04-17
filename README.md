@@ -90,3 +90,9 @@ This is the place for you to write reflections:
 2. Rust's static variables are immutable by default because of the Rust's safety guarantees. Rust ensures thread safety by preventing data races at compile time. If static variables were mutable, it would be possible to have data races, which would violate Rust's safety guarantees. The `lazy_static` crate allows you to create static variables that are initialized lazily, i.e., their value is computed and stored only when they are accessed for the first time. This allows you to have complex initialization logic for your static variables while still maintaining Rust's safety guarantees.
 
 #### Reflection Subscriber-2
+
+1. Not yet, because im not really sure what to add to improve/enchance the code
+
+2. We would simply add each new subcriber to the list of observers. When a new notification is available, all subscribers would be notified automatically. If I spawn more than one instance of the main app, it would still be straightforward to add them to the system
+
+3. No I havent tried making any tests or enchance the documentation on my postman collection.
